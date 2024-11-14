@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/recipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ysabeau+Office:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="/img/logo.svg" alt="">
+    </div>
+    <div class="nav-options">
+      <button id="homeBtn" class="nav-btn">
+        <img src="/img/home.svg" alt="Home Icon">
+       
+      </button>
+      <button id="likedBtn" class="nav-btn">
+        <img src="/img/liked.svg" alt="Liked Icon">
+      
+      </button>
+      <button id="appleBtn" class="nav-btn">
+        <img src="/img/asettings.svg" alt="Settings Icon">
+        
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+        <div class="search-wrapper">
+            <img src="img/search.svg" alt="Search Icon" class="search-icon">
+            <input type="text" id="searchInput" placeholder="Search">
+            
+          </div>
+          <div class="header-buttons">
+            <button id="filterBtn" class="filter-btn">
+              <img src="/img/filter.svg" alt="Filter Icon">
+            </button>
+            <button id="loginBtn" class="login-btn">Login</button>
+          </div>
+    </header>
+
+    <div class="item">
+        <img src="/img/pan.svg" alt="Item Image" class="item-image">
+        <div class="item-text">
+          <h3 class="item-title">Only the best recipes !</h3>
+          <p class="item-description">Today’s new recipies for you</p>
+        </div>
+      </div>
+
+      
+
+    <div id="recipeGrid" class="recipe-grid"></div>
+
+    <!-- Modal for Recipe Details -->
+    <div id="recipeModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="recipeDetails"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="recipe.js"></script>
+</body>
+</html>
